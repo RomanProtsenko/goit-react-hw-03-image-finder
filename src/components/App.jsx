@@ -23,10 +23,7 @@ export class App extends Component {
   ) {
     this.fetchImages();
   }
-  if (this.state.totalHits !== prevState.totalHits) {
-    this.setState({ maxPage: Math.ceil(this.state.totalHits / IMAGES_PER_PAGE) });
   }
-}
 
 
   fetchImages = async () => {
